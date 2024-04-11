@@ -21,7 +21,7 @@ import java.sql.Timestamp
  * application's home page.
  */
 @Singleton
-class ConfigController @Inject()(cc: ControllerComponents, actorSystem: ActorSystem)(implicit exec: ExecutionContext) extends AbstractController(cc) {
+class ConfigController @Inject()(cc: ControllerComponents)(implicit exec: ExecutionContext) extends AbstractController(cc) {
 
   /**
    * Create an Action to render an HTML page with a welcome message.
@@ -36,6 +36,10 @@ class ConfigController @Inject()(cc: ControllerComponents, actorSystem: ActorSys
   def getNewGraph(request: Request[AnyContent]): Future[JsValue] = {
     val promise: Promise[JsValue] = Promise[JsValue]()
     val config: JsValue = request.body.asJson.get     // This gets the JSON from the body of the post
+    // Convert to GraphConfig (if necessary)
+    // Call random_graph(config) from controller in Core
+    //random_graph(config)
+    // Return the ArrayBuffer[Building] to the FE
     promise.success(config)                           // Put the return JSON in the success of the promise
     promise.future
   }
