@@ -2,17 +2,21 @@ package controllers
 
 import java.io.{FileInputStream, InputStream}
 import akka.actor.ActorSystem
+
 import javax.inject._
 import play.Environment
 import play.api.libs.json.JsResult.Exception
 import play.api.libs.json._
 import play.api.mvc._
+
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 import scala.concurrent.duration._
 import scala.concurrent.{ExecutionContext, Future, Promise}
 import scala.language.postfixOps
 import java.sql.Timestamp
+import edu.pitt.cs.db.core.Controller._
+import edu.pitt.cs.db.models._
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -27,19 +31,20 @@ class ConfigController @Inject()(cc: ControllerComponents) (implicit exec: Execu
    * will be called when the application receives a `GET` request with
    * a path of `/`.
    */
-  def genGraph = Action.async {
+  def genGraph: Action[AnyContent] = Action.async {
     (request: Request[AnyContent]) =>
         getNewGraph(request).map {msg => Ok(msg)}
   }
 
-  def getNewGraph(request: Request[AnyContent]): Future[JsValue] = {
+  private def getNewGraph(request: Request[AnyContent]): Future[JsValue] = {
     val promise: Promise[JsValue] = Promise[JsValue]()
-    val config: JsValue = request.body.asJson.get   // This gets the JSON from the body of the post
+    val body: JsValue = request.body.asJson.get
     // Convert to GraphConfig (if necessary)
+    val config = body.as[GraphConfig]
     // Call random_graph(config) from controller in Core
-    // random_graph(config)
-    // Return the ArrayBuffer[Building] to the FE
-    promise.success(config)
+    val graph = random_graph(config)
+    // Return the ArrayBuffer[Building] to the front end as a JSON object
+    promise.success(Json.toJson(graph))
     promise.future
   }
 

@@ -3,6 +3,7 @@ lazy val root = (project in file("."))
   //.enablePlugins(PlayNettyServer).disablePlugins(PlayAkkaHttpServer) // uncomment to use the Netty backend
   .settings(
     name := """play-scala-starter-example""",
+    organization := "edu.pitt.cs.db",
     version := "1.0-SNAPSHOT",
     crossScalaVersions := Seq("2.13.13", "3.3.3"),
     scalaVersion := crossScalaVersions.value.head,
@@ -15,6 +16,8 @@ lazy val root = (project in file("."))
       "-feature",
       "-Werror"
     ),
+    unmanagedBase := baseDirectory.value / "lib",
+    unmanagedJars := (baseDirectory.value ** "*.jar").classpath,
     // Needed for ssl-config to create self signed certificated under Java 17
     Test / javaOptions ++= List("--add-exports=java.base/sun.security.x509=ALL-UNNAMED"),
   )
