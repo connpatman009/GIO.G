@@ -1,0 +1,9 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\connp\Git Repositories\play-samples-2.9.x\play-scala-starter-example\conf\routes:12:1: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method path,[0m
+[0m[[0m[31merror[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[31merror[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable][0m
+[0m[[0m[31merror[0m] [0m[0mPOST    /config                     controllers.ConfigController.path[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\connp\Git Repositories\play-samples-2.9.x\play-scala-starter-example\conf\routes:12:1: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method path,[0m
+[0m[[0m[31merror[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[31merror[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable][0m
+[0m[[0m[31merror[0m] [0m[0mPOST    /config                     controllers.ConfigController.path[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
