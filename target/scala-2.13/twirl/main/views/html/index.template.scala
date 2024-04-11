@@ -26,8 +26,7 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
       {
 
 
-Seq[Any](format.raw/*5.56*/("""
-
+Seq[Any](format.raw/*6.1*/("""
 """),format.raw/*11.4*/("""
 """),_display_(/*12.2*/main("Welcome to Play")/*12.25*/ {_display_(Seq[Any](format.raw/*12.27*/("""
 
@@ -52,9 +51,9 @@ Seq[Any](format.raw/*5.56*/("""
               /*
                   -- GENERATED --
                   SOURCE: app/views/index.scala.html
-                  HASH: 7a10df155be6e15fbc2afa5423b1f6f24106733b
-                  MATRIX: 876->141|1025->195|1056->397|1085->400|1117->423|1157->425|1192->559|1225->566|1279->599|1314->604
-                  LINES: 24->5|29->5|31->11|32->12|32->12|32->12|34->17|35->18|35->18|37->20
+                  HASH: 01204b018a852c72d33c234b1668ca16303e6179
+                  MATRIX: 873->137|1021->192|1049->387|1077->389|1109->412|1149->414|1182->543|1214->549|1268->582|1301->585
+                  LINES: 24->5|29->6|30->11|31->12|31->12|31->12|33->17|34->18|34->18|36->20
                   -- GENERATED --
               */
           

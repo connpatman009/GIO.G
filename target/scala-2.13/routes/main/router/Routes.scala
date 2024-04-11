@@ -18,10 +18,10 @@ class Routes(
   CountController_1: controllers.CountController,
   // @LINE:10
   AsyncController_3: controllers.AsyncController,
-  // @LINE:12
-  ConfigController_0: controllers.ConfigController,
-  // @LINE:15
+  // @LINE:13
   Assets_2: controllers.Assets,
+  // @LINE:16
+  ConfigController_0: controllers.ConfigController,
   val prefix: String
 ) extends GeneratedRouter {
 
@@ -33,16 +33,16 @@ class Routes(
     CountController_1: controllers.CountController,
     // @LINE:10
     AsyncController_3: controllers.AsyncController,
-    // @LINE:12
-    ConfigController_0: controllers.ConfigController,
-    // @LINE:15
-    Assets_2: controllers.Assets
-  ) = this(errorHandler, HomeController_4, CountController_1, AsyncController_3, ConfigController_0, Assets_2, "/")
+    // @LINE:13
+    Assets_2: controllers.Assets,
+    // @LINE:16
+    ConfigController_0: controllers.ConfigController
+  ) = this(errorHandler, HomeController_4, CountController_1, AsyncController_3, Assets_2, ConfigController_0, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_4, CountController_1, AsyncController_3, ConfigController_0, Assets_2, prefix)
+    new Routes(errorHandler, HomeController_4, CountController_1, AsyncController_3, Assets_2, ConfigController_0, prefix)
   }
 
   private val defaultPrefix: String = {
@@ -53,8 +53,8 @@ class Routes(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """count""", """controllers.CountController.count"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """message""", """controllers.AsyncController.message"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """new_graph""", """controllers.ConfigController.genGraph"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(file:String)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """new_graph""", """controllers.ConfigController.genGraph"""),
     Nil
   ).foldLeft(Seq.empty[(String, String, String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String, String, String)]
@@ -116,29 +116,11 @@ class Routes(
     )
   )
 
-  // @LINE:12
-  private lazy val controllers_ConfigController_genGraph3_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("new_graph")))
-  )
-  private lazy val controllers_ConfigController_genGraph3_invoker = createInvoker(
-    ConfigController_0.genGraph,
-    play.api.routing.HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.ConfigController",
-      "genGraph",
-      Nil,
-      "POST",
-      this.prefix + """new_graph""",
-      """ Generate a new graph from a configuration object""",
-      Seq()
-    )
-  )
-
-  // @LINE:15
-  private lazy val controllers_Assets_versioned4_route = Route("GET",
+  // @LINE:13
+  private lazy val controllers_Assets_versioned3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""", encodeable=false)))
   )
-  private lazy val controllers_Assets_versioned4_invoker = createInvoker(
+  private lazy val controllers_Assets_versioned3_invoker = createInvoker(
     Assets_2.versioned(fakeValue[String]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -148,6 +130,24 @@ class Routes(
       "GET",
       this.prefix + """assets/""" + "$" + """file<.+>""",
       """ Map static resources from the /public folder to the /assets URL path""",
+      Seq()
+    )
+  )
+
+  // @LINE:16
+  private lazy val controllers_ConfigController_genGraph4_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("new_graph")))
+  )
+  private lazy val controllers_ConfigController_genGraph4_invoker = createInvoker(
+    ConfigController_0.genGraph,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ConfigController",
+      "genGraph",
+      Nil,
+      "POST",
+      this.prefix + """new_graph""",
+      """ Generate a new graph from a configuration object""",
       Seq()
     )
   )
@@ -173,16 +173,16 @@ class Routes(
         controllers_AsyncController_message2_invoker.call(AsyncController_3.message)
       }
   
-    // @LINE:12
-    case controllers_ConfigController_genGraph3_route(params@_) =>
-      call { 
-        controllers_ConfigController_genGraph3_invoker.call(ConfigController_0.genGraph)
+    // @LINE:13
+    case controllers_Assets_versioned3_route(params@_) =>
+      call(params.fromPath[String]("file", None)) { (file) =>
+        controllers_Assets_versioned3_invoker.call(Assets_2.versioned(file))
       }
   
-    // @LINE:15
-    case controllers_Assets_versioned4_route(params@_) =>
-      call(params.fromPath[String]("file", None)) { (file) =>
-        controllers_Assets_versioned4_invoker.call(Assets_2.versioned(file))
+    // @LINE:16
+    case controllers_ConfigController_genGraph4_route(params@_) =>
+      call { 
+        controllers_ConfigController_genGraph4_invoker.call(ConfigController_0.genGraph)
       }
   }
 }
