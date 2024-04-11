@@ -1,4 +1,4 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\connp\Git Repositories\play-samples-2.9.x\play-scala-starter-example\conf\application.conf,C:\Users\connp\Git Repositories\play-samples-2.9.x\play-scala-starter-example\target\scala-2.13\classes\application.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\connp\Git Repositories\play-samples-2.9.x\play-scala-starter-example\conf\logback.xml,C:\Users\connp\Git Repositories\play-samples-2.9.x\play-scala-starter-example\target\scala-2.13\classes\logback.xml)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\connp\Git Repositories\play-samples-2.9.x\play-scala-starter-example\conf\routes,C:\Users\connp\Git Repositories\play-samples-2.9.x\play-scala-starter-example\target\scala-2.13\classes\routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\connp\Git Repositories\GIO.G\conf\application.conf,C:\Users\connp\Git Repositories\GIO.G\target\scala-2.13\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\connp\Git Repositories\GIO.G\conf\logback.xml,C:\Users\connp\Git Repositories\GIO.G\target\scala-2.13\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\connp\Git Repositories\GIO.G\conf\routes,C:\Users\connp\Git Repositories\GIO.G\target\scala-2.13\classes\routes)[0m

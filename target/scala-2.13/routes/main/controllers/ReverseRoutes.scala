@@ -32,9 +32,9 @@ package controllers {
 
   
     // @LINE:12
-    def path: Call = {
+    def genGraph: Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "config")
+      Call("POST", _prefix + { _defaultPrefix } + "new_graph")
     }
   
   }

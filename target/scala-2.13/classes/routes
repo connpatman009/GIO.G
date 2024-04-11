@@ -8,8 +8,8 @@ GET     /                           controllers.HomeController.index
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
 GET     /message                    controllers.AsyncController.message
-# MY EXAMPLE
-POST    /config                     controllers.ConfigController.path
+# Generate a new graph from a configuration object
+POST    /new_graph                  controllers.ConfigController.genGraph
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(file)

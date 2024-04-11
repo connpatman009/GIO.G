@@ -38,11 +38,11 @@ package controllers.javascript {
 
   
     // @LINE:12
-    def path: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.ConfigController.path",
+    def genGraph: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ConfigController.genGraph",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "config"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "new_graph"})
         }
       """
     )

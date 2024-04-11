@@ -1,10 +1,11 @@
 package controllers
 
 import java.io.{FileInputStream, InputStream}
-
 import akka.actor.ActorSystem
+
 import javax.inject._
 import play.Environment
+import play.api.libs.json.JsResult.Exception
 import play.api.libs.json._
 import play.api.mvc._
 
@@ -28,16 +29,14 @@ class ConfigController @Inject()(cc: ControllerComponents, actorSystem: ActorSys
    * will be called when the application receives a `GET` request with
    * a path of `/`.
    */
-  def path = Action.async {
-    getPath().map { msg => Ok(msg) }
+  def genGraph = Action.async { (request: Request[AnyContent]) =>
+    getNewGraph(request).map { msg => Ok(msg) }
   }
 
-  def getPath(): Future[JsValue] = {
+  def getNewGraph(request: Request[AnyContent]): Future[JsValue] = {
     val promise: Promise[JsValue] = Promise[JsValue]()
-    actorSystem.scheduler.scheduleOnce(1.second) {
-      val x: JsValue = Json.obj("path" -> "found")
-      promise.success(x)
-    }(actorSystem.dispatcher) // run scheduled tasks using the actor system's dispatcher
+    val config: JsValue = request.body.asJson.get     // This gets the JSON from the body of the post
+    promise.success(config)                           // Put the return JSON in the success of the promise
     promise.future
   }
 

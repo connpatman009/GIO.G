@@ -53,7 +53,7 @@ class Routes(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """count""", """controllers.CountController.count"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """message""", """controllers.AsyncController.message"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """config""", """controllers.ConfigController.path"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """new_graph""", """controllers.ConfigController.genGraph"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(file:String)"""),
     Nil
   ).foldLeft(Seq.empty[(String, String, String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -117,19 +117,19 @@ class Routes(
   )
 
   // @LINE:12
-  private lazy val controllers_ConfigController_path3_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("config")))
+  private lazy val controllers_ConfigController_genGraph3_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("new_graph")))
   )
-  private lazy val controllers_ConfigController_path3_invoker = createInvoker(
-    ConfigController_0.path,
+  private lazy val controllers_ConfigController_genGraph3_invoker = createInvoker(
+    ConfigController_0.genGraph,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ConfigController",
-      "path",
+      "genGraph",
       Nil,
       "POST",
-      this.prefix + """config""",
-      """ MY EXAMPLE""",
+      this.prefix + """new_graph""",
+      """ Generate a new graph from a configuration object""",
       Seq()
     )
   )
@@ -174,9 +174,9 @@ class Routes(
       }
   
     // @LINE:12
-    case controllers_ConfigController_path3_route(params@_) =>
+    case controllers_ConfigController_genGraph3_route(params@_) =>
       call { 
-        controllers_ConfigController_path3_invoker.call(ConfigController_0.path)
+        controllers_ConfigController_genGraph3_invoker.call(ConfigController_0.genGraph)
       }
   
     // @LINE:15
