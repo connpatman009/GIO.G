@@ -1,7 +1,6 @@
 package controllers
 
 import java.io.{FileInputStream, InputStream}
-import akka.actor.ActorSystem
 
 import javax.inject._
 import play.Environment
