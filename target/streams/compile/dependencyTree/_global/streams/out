@@ -1,5 +1,4 @@
 [info] edu.pitt.cs.db:play-scala-starter-example_2.13:1.0-SNAPSHOT [S]
-[info]   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
 [info]   +-com.h2database:h2:2.2.224
 [info]   +-com.typesafe.play:play-akka-http-server_2.13:2.9.2 [S]
 [info]   | +-com.typesafe.akka:akka-http-core_2.13:10.2.10 [S]
@@ -9,46 +8,44 @@
 [info]   | | +-com.typesafe.play:play_2.13:2.9.2 [S]
 [info]   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   | |   +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | 
 [info]   | |   +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   | |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   |   
 [info]   | |   +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   | |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   |   
 [info]   | |   +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   | |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   |   
 [info]   | |   +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   | |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   |   
-[info]   | |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   | |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | |   | | 
+[info]   | |   | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   | |   | 
 [info]   | |   +-com.google.guava:guava:32.1.3-jre
 [info]   | |   | +-com.google.code.findbugs:jsr305:3.0.2
 [info]   | |   | +-com.google.errorprone:error_prone_annotations:2.21.1
@@ -85,51 +82,50 @@
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.11.4 (evicted by: 2.14.3)
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.11.4 (evicted by: 2...
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | | 
 [info]   | |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.11.4 (e..
 [info]   | |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted..
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2...
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | |   
 [info]   | |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4 (evict..
 [info]   | |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted..
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2...
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | |   
 [info]   | |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4 (evi..
 [info]   | |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted..
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2...
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | |   
 [info]   | |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4..
 [info]   | |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted..
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2...
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | |   
 [info]   | |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.11.4 (evi..
-[info]   | |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   | |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | |   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | |   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | |   | | | 
+[info]   | |   | | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   | |   | | 
 [info]   | |   | +-com.typesafe.akka:akka-actor_2.13:2.6.21 [S]
 [info]   | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.3)
 [info]   | |   | | +-com.typesafe:config:1.4.3
@@ -157,27 +153,21 @@
 [info]   | |   +-com.typesafe.play:play-json_2.13:2.10.4 [S]
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   | |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   | |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | | 
 [info]   | |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted..
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2...
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | |   
 [info]   | |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   | |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted..
+[info]   | |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2...
 [info]   | |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   | |   | |   
 [info]   | |   | +-com.typesafe.play:play-functional_2.13:2.10.4 [S]
@@ -247,46 +237,44 @@
 [info]   | +-com.typesafe.play:play_2.13:2.9.2 [S]
 [info]   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by: 2..
+[info]   |   +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | 
 [info]   |   +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
-[info]   |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | 
+[info]   |   | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   |   | 
 [info]   |   +-com.google.guava:guava:32.1.3-jre
 [info]   |   | +-com.google.code.findbugs:jsr305:3.0.2
 [info]   |   | +-com.google.errorprone:error_prone_annotations:2.21.1
@@ -323,51 +311,50 @@
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.11.4 (evicted by: 2.14.3)
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.11.4 (evicted by: 2.14..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | | 
 [info]   |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.11.4 (evi..
 [info]   |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4 (evicted..
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4 (evict..
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4 (..
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.11.4 (evict..
-[info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   |   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | | 
+[info]   |   | | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   |   | | 
 [info]   |   | +-com.typesafe.akka:akka-actor_2.13:2.6.21 [S]
 [info]   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.3)
 [info]   |   | | +-com.typesafe:config:1.4.3
@@ -395,27 +382,21 @@
 [info]   |   +-com.typesafe.play:play-json_2.13:2.10.4 [S]
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | | 
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.typesafe.play:play-functional_2.13:2.10.4 [S]
@@ -498,46 +479,44 @@
 [info]   | +-com.typesafe.play:play_2.13:2.9.2 [S]
 [info]   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by: 2..
+[info]   |   +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | 
 [info]   |   +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
-[info]   |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | 
+[info]   |   | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   |   | 
 [info]   |   +-com.google.guava:guava:32.1.3-jre
 [info]   |   | +-com.google.code.findbugs:jsr305:3.0.2
 [info]   |   | +-com.google.errorprone:error_prone_annotations:2.21.1
@@ -574,51 +553,50 @@
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.11.4 (evicted by: 2.14.3)
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.11.4 (evicted by: 2.14..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | | 
 [info]   |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.11.4 (evi..
 [info]   |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4 (evicted..
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4 (evict..
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4 (..
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.11.4 (evict..
-[info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   |   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | | 
+[info]   |   | | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   |   | | 
 [info]   |   | +-com.typesafe.akka:akka-actor_2.13:2.6.21 [S]
 [info]   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.3)
 [info]   |   | | +-com.typesafe:config:1.4.3
@@ -646,27 +624,21 @@
 [info]   |   +-com.typesafe.play:play-json_2.13:2.10.4 [S]
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | | 
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.typesafe.play:play-functional_2.13:2.10.4 [S]
@@ -722,46 +694,44 @@
 [info]   | +-com.typesafe.play:play_2.13:2.9.2 [S]
 [info]   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by: 2..
+[info]   |   +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | 
 [info]   |   +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
-[info]   |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | 
+[info]   |   | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   |   | 
 [info]   |   +-com.google.guava:guava:32.1.3-jre
 [info]   |   | +-com.google.code.findbugs:jsr305:3.0.2
 [info]   |   | +-com.google.errorprone:error_prone_annotations:2.21.1
@@ -798,51 +768,50 @@
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.11.4 (evicted by: 2.14.3)
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.11.4 (evicted by: 2.14..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | | 
 [info]   |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.11.4 (evi..
 [info]   |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4 (evicted..
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4 (evict..
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4 (..
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.11.4 (evict..
-[info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   |   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | | 
+[info]   |   | | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   |   | | 
 [info]   |   | +-com.typesafe.akka:akka-actor_2.13:2.6.21 [S]
 [info]   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.3)
 [info]   |   | | +-com.typesafe:config:1.4.3
@@ -870,27 +839,21 @@
 [info]   |   +-com.typesafe.play:play-json_2.13:2.10.4 [S]
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | | 
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.typesafe.play:play-functional_2.13:2.10.4 [S]
@@ -942,46 +905,44 @@
 [info]   | +-com.typesafe.play:play_2.13:2.9.2 [S]
 [info]   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by: 2..
+[info]   |   +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | 
 [info]   |   +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
 [info]   |   +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   |   
-[info]   |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   |   +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | 
+[info]   |   | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   |   | 
 [info]   |   +-com.google.guava:guava:32.1.3-jre
 [info]   |   | +-com.google.code.findbugs:jsr305:3.0.2
 [info]   |   | +-com.google.errorprone:error_prone_annotations:2.21.1
@@ -1018,51 +979,50 @@
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.11.4 (evicted by: 2.14.3)
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.11.4 (evicted by: 2.14..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | | 
 [info]   |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.11.4 (evi..
 [info]   |   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4 (evicted..
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4 (evict..
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4 (..
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.11.4 (evict..
-[info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3
+[info]   |   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   |   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   |   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   |   | | | 
+[info]   |   | | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   |   | | 
 [info]   |   | +-com.typesafe.akka:akka-actor_2.13:2.6.21 [S]
 [info]   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.3)
 [info]   |   | | +-com.typesafe:config:1.4.3
@@ -1090,27 +1050,21 @@
 [info]   |   +-com.typesafe.play:play-json_2.13:2.10.4 [S]
 [info]   |   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted by:..
+[info]   |   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14.3)
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | | 
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
 [info]   |   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
-[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.2
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.2 (evicted b..
+[info]   |   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
-[info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.2 (evicted by: 2.14..
 [info]   |   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
 [info]   |   | |   
 [info]   |   | +-com.typesafe.play:play-functional_2.13:2.10.4 [S]
