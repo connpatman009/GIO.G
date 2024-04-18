@@ -11,7 +11,7 @@ import play.api.mvc._
 import _root_.controllers.Assets.Asset
 
 class Routes(
-  override val errorHandler: play.api.http.HttpErrorHandler,
+  override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   HomeController_4: controllers.HomeController,
   // @LINE:8
