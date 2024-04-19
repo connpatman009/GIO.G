@@ -37,6 +37,18 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "new_graph")
     }
   
+    // @LINE:19
+    def updateGraph: Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "update_graph")
+    }
+  
+    // @LINE:22
+    def pathFind: Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "find_path")
+    }
+  
   }
 
   // @LINE:8

@@ -14,3 +14,9 @@ GET     /assets/*file               controllers.Assets.versioned(file)
 
 # Generate a new graph from a configuration object
 POST    /new_graph                  controllers.ConfigController.genGraph
+
+# Update the graph representation on the back end from a list of buildings
+POST    /update_graph               controllers.ConfigController.updateGraph
+
+# Update the graph representation on the back end from a list of buildings
+POST    /find_path                  controllers.ConfigController.pathFind

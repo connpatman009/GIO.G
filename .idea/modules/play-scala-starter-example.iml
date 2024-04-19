@@ -39,7 +39,7 @@
     <orderEntry type="library" scope="TEST" name="sbt: com.github.sbt:junit-interface:0.13.3:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: com.google.auto.service:auto-service-annotations:1.1.1:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.code.findbugs:jsr305:3.0.2:jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="sbt: com.google.code.gson:gson:2.10:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.code.gson:gson:2.10:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.errorprone:error_prone_annotations:2.21.1:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.guava:failureaccess:1.0.1:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.guava:guava:32.1.3-jre:jar" level="project" />
@@ -47,8 +47,13 @@
     <orderEntry type="library" name="sbt: com.google.inject.extensions:guice-assistedinject:6.0.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.inject:guice:6.0.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.google.j2objc:j2objc-annotations:2.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.maps:google-maps-services:0.9.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.h2database:h2:2.2.224:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: com.shapesecurity:salvation2:3.0.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.squareup.okhttp3:okhttp:3.14.9:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.squareup.okio:okio:1.17.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.squareup.retrofit2:converter-gson:2.9.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.squareup.retrofit2:retrofit:2.9.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.thoughtworks.paranamer:paranamer:2.8:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-actor-typed_2.13:2.6.21:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-actor_2.13:2.6.21:jar" level="project" />
@@ -145,6 +150,7 @@
     <orderEntry type="library" scope="TEST" name="sbt: org.objenesis:objenesis:3.3:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: org.ow2.asm:asm:7.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.reactivestreams:reactive-streams:1.0.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-graph:graph-core_2.13:1.13.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-java8-compat_2.13:1.0.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-parser-combinators_2.13:1.1.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-xml_2.13:2.2.0:jar" level="project" />
@@ -196,6 +202,11 @@
       <library name="sbt: unmanaged-jars">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../lib/CAPRIO-Core.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/mapbox-sdk-core-5.8.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/mapbox-sdk-directions-models-5.8.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/mapbox-sdk-geojson-5.8.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/mapbox-sdk-services-5.8.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/mapbox-sdk-turf-5.8.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

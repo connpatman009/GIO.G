@@ -47,6 +47,26 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:19
+    def updateGraph: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ConfigController.updateGraph",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "update_graph"})
+        }
+      """
+    )
+  
+    // @LINE:22
+    def pathFind: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ConfigController.pathFind",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "find_path"})
+        }
+      """
+    )
+  
   }
 
   // @LINE:8

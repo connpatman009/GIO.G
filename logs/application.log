@@ -1,4 +1,4 @@
-2024-04-19 13:05:26,937 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2024-04-19 15:47:02,737 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
@@ -6,72 +6,9 @@
     filters.ExampleFilter
     play.filters.cors.CORSFilter
 
-2024-04-19 13:05:27,024 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev) (no global state)
-2024-04-19 13:05:27,215 [ERROR] from play.api.http.DefaultHttpErrorHandler in application-akka.actor.default-dispatcher-6 - 
-
-! @858p56cpl - Internal server error, for (POST) [/new_graph] ->
- 
-play.api.PlayException: Execution exception[[RuntimeException: java.lang.NoClassDefFoundError: scalax/collection/GraphBase$InnerEdge]]
-	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$3(HttpErrorHandler.scala:407)
-	at scala.Option.getOrElse(Option.scala:201)
-	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:407)
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:390)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:267)
-	at play.filters.cors.AbstractCORSPolicy$$anonfun$1.applyOrElse(AbstractCORSPolicy.scala:129)
-	at play.filters.cors.AbstractCORSPolicy$$anonfun$1.applyOrElse(AbstractCORSPolicy.scala:127)
-	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
-	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:65)
-	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
-	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
-	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallbacks(Promise.scala:312)
-	at scala.concurrent.impl.Promise$DefaultPromise.recoverWith(Promise.scala:200)
-	at play.api.libs.streams.StrictAccumulator.$anonfun$recoverWith$3(Accumulator.scala:189)
-	at scala.Function1.$anonfun$andThen$1(Function1.scala:87)
-	at scala.Function1.$anonfun$andThen$1(Function1.scala:87)
-	at scala.Function1.$anonfun$andThen$1(Function1.scala:87)
-	at scala.Function1.$anonfun$andThen$1(Function1.scala:87)
-	at scala.Function1.$anonfun$andThen$1(Function1.scala:87)
-	at play.api.libs.streams.StrictAccumulator.run(Accumulator.scala:199)
-	at play.core.server.AkkaHttpServer.$anonfun$runAction$3(AkkaHttpServer.scala:468)
-	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:40)
-	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:50)
-	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
-Caused by: java.lang.RuntimeException: java.lang.NoClassDefFoundError: scalax/collection/GraphBase$InnerEdge
-	at play.api.mvc.ActionBuilder$$anon$9.apply(Action.scala:439)
-	at play.api.mvc.Action.$anonfun$apply$6(Action.scala:83)
-	at play.api.mvc.BodyParser$.$anonfun$runParserThenInvokeAction$1(Action.scala:260)
-	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$4(Accumulator.scala:167)
-	at scala.util.Try$.apply(Try.scala:217)
-	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$3(Accumulator.scala:167)
-	at scala.Function1.$anonfun$andThen$1(Function1.scala:87)
-	... 22 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: scalax/collection/GraphBase$InnerEdge
-	at edu.pitt.cs.db.core.Controller$.<clinit>(Controller.scala:21)
-	at controllers.ConfigController.getNewGraph(ConfigController.scala:44)
-	at controllers.ConfigController.$anonfun$genGraph$1(ConfigController.scala:35)
-	at play.api.mvc.ActionBuilderImpl.invokeBlock(Action.scala:496)
-	at play.api.mvc.ActionBuilderImpl.invokeBlock(Action.scala:494)
-	at play.api.mvc.ActionBuilder$$anon$9.apply(Action.scala:434)
-	... 28 common frames omitted
-Caused by: java.lang.ClassNotFoundException: scalax.collection.GraphBase$InnerEdge
-	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 34 common frames omitted
-2024-04-19 13:11:45,233 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-5-thread-3 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 40000 milliseconds timeout
-2024-04-19 13:11:45,234 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-3 - Stopping Akka HTTP server...
-2024-04-19 13:11:45,238 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-18 - Unbinding /[0:0:0:0:0:0:0:0]:9000
-2024-04-19 13:11:45,241 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-18 - Terminating server binding for /[0:0:0:0:0:0:0:0]:9000
-2024-04-19 13:11:45,266 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-21 - Running provided shutdown stop hooks
+2024-04-19 15:47:02,879 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2024-04-19 15:49:19,307 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-5-thread-5 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 40000 milliseconds timeout
+2024-04-19 15:49:19,311 [INFO] from play.core.server.AkkaHttpServer in pool-5-thread-5 - Stopping Akka HTTP server...
+2024-04-19 15:49:19,314 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-2 - Unbinding /[0:0:0:0:0:0:0:0]:9000
+2024-04-19 15:49:19,319 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-3 - Terminating server binding for /[0:0:0:0:0:0:0:0]:9000
+2024-04-19 15:49:19,375 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-18 - Running provided shutdown stop hooks

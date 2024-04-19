@@ -55,6 +55,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """message""", """controllers.AsyncController.message"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(file:String)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """new_graph""", """controllers.ConfigController.genGraph"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """update_graph""", """controllers.ConfigController.updateGraph"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """find_path""", """controllers.ConfigController.pathFind"""),
     Nil
   ).foldLeft(Seq.empty[(String, String, String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String, String, String)]
@@ -152,6 +154,42 @@ class Routes(
     )
   )
 
+  // @LINE:19
+  private lazy val controllers_ConfigController_updateGraph5_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("update_graph")))
+  )
+  private lazy val controllers_ConfigController_updateGraph5_invoker = createInvoker(
+    ConfigController_0.updateGraph,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ConfigController",
+      "updateGraph",
+      Nil,
+      "POST",
+      this.prefix + """update_graph""",
+      """ Update the graph representation on the back end from a list of buildings""",
+      Seq()
+    )
+  )
+
+  // @LINE:22
+  private lazy val controllers_ConfigController_pathFind6_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("find_path")))
+  )
+  private lazy val controllers_ConfigController_pathFind6_invoker = createInvoker(
+    ConfigController_0.pathFind,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ConfigController",
+      "pathFind",
+      Nil,
+      "POST",
+      this.prefix + """find_path""",
+      """ Update the graph representation on the back end from a list of buildings""",
+      Seq()
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -183,6 +221,18 @@ class Routes(
     case controllers_ConfigController_genGraph4_route(params@_) =>
       call { 
         controllers_ConfigController_genGraph4_invoker.call(ConfigController_0.genGraph)
+      }
+  
+    // @LINE:19
+    case controllers_ConfigController_updateGraph5_route(params@_) =>
+      call { 
+        controllers_ConfigController_updateGraph5_invoker.call(ConfigController_0.updateGraph)
+      }
+  
+    // @LINE:22
+    case controllers_ConfigController_pathFind6_route(params@_) =>
+      call { 
+        controllers_ConfigController_pathFind6_invoker.call(ConfigController_0.pathFind)
       }
   }
 }

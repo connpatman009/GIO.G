@@ -34,7 +34,11 @@ lazy val root = (project in file("."))
       guice,
       "com.h2database" % "h2" % "2.2.224",
       "org.scalatestplus.play" %% "scalatestplus-play" % "6.0.1" % Test,
-      "org.scala-graph" %% "graph-core" % "2.0.1"
+      // The following are CAPRIO-Core dependencies
+      "org.scala-graph" %% "graph-core" % "1.13.2",
+      "com.squareup.retrofit2" % "retrofit" % "2.9.0",
+      "com.squareup.retrofit2" % "converter-gson" % "2.9.0",
+      "com.google.maps" % "google-maps-services" % "0.9.3",
     ),
     libraryDependencies ++= jacksonDatabindOverrides ++ jacksonOverrides ++ akkaSerializationJacksonOverrides,
     scalacOptions ++= Seq(
