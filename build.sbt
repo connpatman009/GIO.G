@@ -34,6 +34,7 @@ lazy val root = (project in file("."))
       guice,
       "com.h2database" % "h2" % "2.2.224",
       "org.scalatestplus.play" %% "scalatestplus-play" % "6.0.1" % Test,
+      "org.scala-graph" %% "graph-core" % "2.0.1"
     ),
     libraryDependencies ++= jacksonDatabindOverrides ++ jacksonOverrides ++ akkaSerializationJacksonOverrides,
     scalacOptions ++= Seq(
