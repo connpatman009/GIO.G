@@ -47,12 +47,12 @@ class ConfigController @Inject()(cc: ControllerComponents) (implicit exec: Execu
       updateBackEndGraph(request).map {msg => Ok(msg)}
   }
 
-  private def updateBackEndGraph(request: Request[AnyContent]): Future[String] = {
+  private def updateBackEndGraph(request: Request[AnyContent]): Future[JsValue] = {
     val body: JsValue = request.body.asJson.get
     val new_graph = Json.fromJson[ArrayBuffer[Building]](body).get
     update_graph(new_graph)
-    val promise: Promise[String] = Promise[String]()
-    promise.success("Graph Updated")
+    val promise: Promise[JsValue] = Promise[JsValue]()
+    promise.success(Json.toJson("Graph Updated"))
     promise.future
   }
 
