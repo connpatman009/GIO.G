@@ -38,9 +38,9 @@ class ConfigController @Inject()(cc: ControllerComponents) (implicit exec: Execu
   private def getNewGraph(request: Request[AnyContent]): Future[JsValue] = {
     val promise: Promise[JsValue] = Promise[JsValue]()
     val body: JsValue = request.body.asJson.get
-    // Convert to GraphConfig (if necessary)
-    val config = body.as[GraphConfig]
-    // Call random_graph(config) from controller in Core
+    // Convert to GraphConfig
+    val config = Json.fromJson[GraphConfig](body).get
+    // Call random_graph(config) from controller in path finding core
     val graph = random_graph(config)
     // Return the ArrayBuffer[Building] to the front end as a JSON object
     promise.success(Json.toJson(graph))
