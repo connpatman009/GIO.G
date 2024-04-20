@@ -1,11 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\connp\Git Repositories\GIO.G\app\controllers\ConfigController.scala:73:32: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : play.api.libs.json.JsValue[0m
-[0m[[0m[31merror[0m] [0m[0m required: String[0m
-[0m[[0m[31merror[0m] [0m[0m    promise.success(Json.toJson(path))[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\connp\Git Repositories\GIO.G\app\controllers\ConfigController.scala:74:13: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : scala.concurrent.Future[String][0m
-[0m[[0m[31merror[0m] [0m[0m required: scala.concurrent.Future[play.api.libs.json.JsValue][0m
-[0m[[0m[31merror[0m] [0m[0m    promise.future[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\connp\Git Repositories\GIO.G\app\controllers\ConfigController.scala:26:103: 'val' expected but identifier found.[0m
+[0m[[0m[31merror[0m] [0m[0mclass ConfigController @Inject()(cc: ControllerComponents) (implicit exec: ExecutionContext, implicit assetsFinder: AssetsFinder)  extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\connp\Git Repositories\GIO.G\app\controllers\ConfigController.scala:78:3: identifier expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
