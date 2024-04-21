@@ -1,61 +1,27 @@
-# play-scala-starter-example
+# Generator for Indoor-Outdoor Graphs (GIO.G)
 
-This is a starter application that shows how Play works.  Please see the documentation at <https://www.playframework.com/documentation/latest/Home> for more details.
+GIO.G is an open-source and configurable tool designed to streamline the modeling process and reduce manual effort, enabling researchers
+and practitioners to focus more on scenario exploration and analysis. GIO.G offers a systematic and automated approach to generating Indoor-Outdoor
+Graphs based on user-defined environmental parameters. This scalability extends to large environments, making GIO.G suitable for a wide range of
+urban modeling applications. The details of the information can be found in our paper: <TODO: Link to paper here>.
 
-## Running
+## Prerequisites
 
-Run this using [sbt](http://www.scala-sbt.org/).  If you downloaded this project from <http://www.playframework.com/download> then you'll find a prepackaged version of sbt in the project directory:
+Scala version [2.13.13](https://www.scala-lang.org/download/)  
+Sbt version [1.9.8](https://www.scala-sbt.org/download/)
 
-```bash
-sbt run
-```
+## Running - Web Interface
 
-And then go to <http://localhost:9000> to see the running web application.
+In order to run our web interface, run ```sbt run``` from the root directory. Then go to <http://localhost:9000> to see the running web application.
 
-There are several demonstration files available in this template.
+## Running - Command-line Interface
 
-## Server backend
+If you'd rather use the graph generator itself, without the web interface, TODO
 
-By default, the project uses the Akka HTTP Server backend. To switch to the Netty Server backend, enable the `PlayNettyServer` sbt plugin in the `build.sbt` file.
-In the `build.sbt` of this project, you'll find a commented line for this setting; simply uncomment it to make the switch.
-For more detailed information, refer to the Play Framework [documentation](https://www.playframework.com/documentation/3.0.x/Server).
+## License
 
-## Controllers
+Distributed under the MIT License. See LICENSE.txt for more information.
 
-- `HomeController.scala`:
+## Contact
 
-  Shows how to handle simple HTTP requests.
-
-- `AsyncController.scala`:
-
-  Shows how to do asynchronous programming when handling a request.
-
-- `CountController.scala`:
-
-  Shows how to inject a component into a controller and use the component when
-  handling requests.
-
-## Components
-
-- `Module.scala`:
-
-  Shows how to use Guice to bind all the components needed by your application.
-
-- `Counter.scala`:
-
-  An example of a component that contains state, in this case a simple counter.
-
-- `ApplicationTimer.scala`:
-
-  An example of a component that starts when the application starts and stops
-  when the application stops.
-
-## Filters
-
-- `Filters.scala`:
-
-  Creates the list of HTTP filters used by your application.
-
-- `ExampleFilter.scala`:
-
-  A simple filter that adds a header to every response.
+TODO
