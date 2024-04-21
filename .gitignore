@@ -48,5 +48,3 @@ project/**/metals.sbt
 
 .bsp
 .history
-
-logs/

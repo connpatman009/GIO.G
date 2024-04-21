@@ -1,14 +1,22 @@
 # Routes
 # This file defines all application routes (Higher priority routes first)
+# ~~~~
 
-# Index page of GIO.G's front-end web interface
-GET     /                           controllers.DisplayController.index
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(file)
 
 # Generate a new graph from a configuration object
-POST    /new_graph                  controllers.CoreController.genGraph
+POST    /new_graph                  controllers.ConfigController.genGraph
 
 # Update the graph representation on the back end from a list of buildings
-POST    /update_graph               controllers.CoreController.updateGraph
+POST    /update_graph               controllers.ConfigController.updateGraph
 
 # Update the graph representation on the back end from a list of buildings
-POST    /find_path                  controllers.CoreController.pathFind
+POST    /find_path                  controllers.ConfigController.pathFind

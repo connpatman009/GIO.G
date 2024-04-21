@@ -2,22 +2,28 @@ package controllers
 
 import edu.pitt.cs.db.core.CAPRIOIndoorVertex
 
+import java.io.{FileInputStream, InputStream}
 import javax.inject._
+import play.Environment
+import play.api.libs.json.JsResult.Exception
 import play.api.libs.json._
 import play.api.mvc._
 
+import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
+import scala.concurrent.duration._
 import scala.concurrent.{ExecutionContext, Future, Promise}
 import scala.language.postfixOps
+import java.sql.Timestamp
 import edu.pitt.cs.db.core.Controller._
 import edu.pitt.cs.db.models._
 
 /**
- * This controller maps requests from the web interface to the graph generator (GIO.G)
- * or the path finder (CAPRIO).
+ * This controller creates an `Action` to handle HTTP requests to the
+ * application's home page.
  */
 @Singleton
-class CoreController @Inject()(cc: ControllerComponents)(implicit exec: ExecutionContext)  extends AbstractController(cc) {
+class ConfigController @Inject()(cc: ControllerComponents) (implicit exec: ExecutionContext)  extends AbstractController(cc) {
 
   def genGraph: Action[AnyContent] = Action.async {
     (request: Request[AnyContent]) =>
