@@ -23,7 +23,7 @@ import edu.pitt.cs.db.models._
  * application's home page.
  */
 @Singleton
-class ConfigController @Inject()(cc: ControllerComponents) (implicit exec: ExecutionContext)  extends AbstractController(cc) {
+class CoreController @Inject()(cc: ControllerComponents)(implicit exec: ExecutionContext)  extends AbstractController(cc) {
 
   def genGraph: Action[AnyContent] = Action.async {
     (request: Request[AnyContent]) =>
